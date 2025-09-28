@@ -1,0 +1,55 @@
+---
+import ExperienceItem from "./Icons/ExperienceItem.astro";
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingieria en Sistemas de Información",
+    description:
+      "Cursando la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN) - Facultad Regional Tucumán. Con incapié en paradigmas de programación, estructuras de datos, algoritmos, bases de datos y desarrollo web.",
+    //link: "#",
+    //linkText: "Learn more",
+  },
+  {
+    date: "Julio 2024",
+    title: "Diseño UX/UI con Figma",
+    description:
+      "Aprendí los fundamentos del diseño UX/UI y todos los estamentos del proceso del diseño, desde el benchmarkin hasta el diseño de wireframes y su prototipado. Culminado con un proyecto final.",
+  },
+  {
+    date: "Diciembre 2023",
+    title:
+      "JavaScript/React nivel avanzado - Global Learning",
+    description:
+      "Actualización intensiva de JavaScript y React, aprendiendo las últimas novedades y mejores prácticas en el desarrollo web moderno. Culminado con un proyecto final.",
+  },
+
+  {
+    date: "Noviembre 2023",
+    title:
+      "Diseño Gráfico Digital - BA Multiplica 2.0",
+    description:
+      "Aprendí los fundamentos del diseño gráfico digital, incluyendo el uso de herramientas como GIMP e Inkscape para crear gráficos y contenido visual atractivo.",
+  },
+
+  {
+    date: "Marzo 2023",
+    title:
+      "Programación Web Full Stack - Argentina Programa 4.0",
+    description:
+      "Aprendí las bases de la logica de programación, HTML, CSS, JavaScript, bases de datos, Node.js, Express, React y metodologías ágiles.",
+  },
+];
+---
+
+<ol
+  class="relative border-s border-gray-200 dark:border-gray-700"
+>
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
