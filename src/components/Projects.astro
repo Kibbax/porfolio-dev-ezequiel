@@ -4,6 +4,7 @@ import Github from "./Icons/Github.astro";
 import Link from "./Icons/Link.astro";
 import NextJS from "./Icons/NextJS.astro";
 import Tailwind from "./Icons/Tailwind.astro";
+import ReactJS from "./Icons/ReactJS.astro";
 
 const TAGS = {
   NEXT: {
@@ -16,6 +17,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#61DAFB] text-black",
+    icon: ReactJS,
+  },
 };
 const PROJECTS = [
   {
@@ -23,10 +29,10 @@ const PROJECTS = [
       "CopyCrafPro - Asistente de escritura AI para creadores de contenido",
     description:
       "CopyCrafPro es una herramienta impulsada por IA diseñada para ayudar a los creadores de contenido a generar textos atractivos y efectivos. Utilizando modelos avanzados de lenguaje, CopyCrafPro puede crear desde publicaciones en redes sociales hasta descripciones de productos, adaptándose al tono y estilo deseado por el usuario.",
-    link: "#",
+    link: "https://copy-craft-pro.vercel.app",
     github: "https://github.com/Kibbax/copy-ai",
     image: "/Projects/copycrafpro.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.REACT],
   },
 ];
 ---
@@ -46,7 +52,7 @@ const PROJECTS = [
           <div class="w-full md:w-1/2">
             <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
               <img
-                alt="Recién llegado vs 5 años en Nueva Zelanda"
+                alt="Project Image"
                 class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
                 loading="lazy"
                 src={image}
