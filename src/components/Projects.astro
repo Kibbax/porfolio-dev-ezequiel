@@ -1,0 +1,38 @@
+---
+const PROJECTS = [
+  {
+    title: "CopyCraft Pro",
+    description:
+      "Aplicación web para generar textos publicitarios y contenido de marketing utilizando inteligencia artificial.",
+    link: "#",
+    github: "https://github.com/Kibbax/copy-ai",
+    image: "public/Projects/copycrafpro.webp",
+    tags: ["React", "Node.js"],
+  },
+];
+---
+
+{
+  PROJECTS.map(
+    ({ image, title, description, tags }) => (
+      <article class="max-w-[700px]">
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">
+          {title}
+        </h3>
+        <p class="text-lg mb-4 text-pretty">
+          {description}
+        </p>
+        <ul>
+          {tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+        <img
+          class="w-60 h-auto rounded-lg mt-4 shadow-white/10 shadow-lg"
+          src={image}
+          alt={title}
+        />
+      </article>
+    )
+  )
+}
